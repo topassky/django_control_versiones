@@ -1,0 +1,37 @@
+{% load widget_tweaks %}
+
+<form  enctype="multipart/form-data">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+
+            <h5 class="m-0 text-uppercase text-secondary">
+                <strong> Suscripción mensual $10 </strong>
+            </h5>
+
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"> Tenga acceso a todo el sistema de inventario</h5>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="inputName" class="control-label">Nombre Completo</label>
+            </div>
+
+            <div>
+                <input type="text" class="form-control" id="inputName" value="{{ request.user.first_name }} {{ request.user.last_name }}"
+                readonly>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email" class="control-label">Correo Electronico</label>
+            </div>
+
+            <div>
+                <input type="text" class="form-control" id="email" value="{{ request.user.email }}"
+                readonly>
+            </div>
+        </div>
+
+    </div>
+</form>

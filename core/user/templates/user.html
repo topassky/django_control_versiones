@@ -1,0 +1,26 @@
+{% extends 'body.html' %}
+
+{% block content %}
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- Profile Image -->
+              {% include 'foto_perfil.html' %}
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-9">
+
+            <!-- Profile Image -->
+            {% include 'formulario-suscripcion.html' %}
+            <!-- /.card -->
+
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+{% endblock %}
